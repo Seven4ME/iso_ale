@@ -1,0 +1,446 @@
+/**
+ * React Starter Kit (https://www.reactstarterkit.com/)
+ *
+ * Copyright © 2014-present Kriasoft, LLC. All rights reserved.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE.txt file in the root directory of this source tree.
+ */
+
+@import '../variables.css';
+
+:root {
+  --brand-color: #61dafb;
+}
+
+.root {
+  background: fff;
+  color: #fff;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 20px 0;
+  max-width: var(--max-content-width);
+}
+
+.brand {
+  color: color(var(--brand-color) lightness(+10%));
+  text-decoration: none;
+  font-size: 1.75em; /* ~28px */
+}
+
+.brandTxt {
+  margin-left: 10px;
+}
+
+.banner {
+  text-align: center;
+}
+
+.bannerTitle {
+  margin: 0;
+  padding: 10px;
+  font-weight: normal;
+  font-size: 4em;
+  line-height: 1em;
+}
+
+.bannerDesc {
+  padding: 0;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 1.25em;
+  margin: 0;
+}
+
+header {
+  width: 100%;
+  background: #fff;
+  z-index: 100;
+  position: relative
+}
+
+.cmn {
+  position: absolute;
+  margin-left: -9999px;
+  visibility: hidden
+}
+
+.cmn+label {
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+  outline: 0;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none
+}
+
+input.flat+label {
+  padding: 2px;
+  width: 87px;
+  height: 30px;
+  background-color: #ff9c00;
+  -webkit-transition: background .4s;
+  -o-transition: background .4s;
+  transition: background .4s
+}
+
+input.flat+label:after,
+input.flat+label:before {
+  display: block;
+  position: absolute;
+  content: ""
+}
+
+input.flat+label:before {
+  top: 2px;
+  left: 2px;
+  bottom: 2px;
+  right: 2px;
+  background-color: #fff;
+  -webkit-transition: background .4s;
+  -o-transition: background .4s;
+  transition: background .4s
+}
+
+input.flat+label:after {
+  top: 4px;
+  left: 4px;
+  bottom: 4px;
+  width: 49%;
+  background-color: #ff9c00;
+  -webkit-transition: margin .4s, background .4s;
+  -o-transition: margin .4s, background .4s;
+  transition: margin .4s, background .4s
+}
+
+input.flat+label {
+  color: #fff;
+  margin-left: 25px
+}
+
+input.flat+label:after {
+  color: #000
+}
+
+input.flat:checked+label:after {
+  margin-left: 36px;
+  background-color: #ff9c00
+}
+
+.ruLang {
+  position: relative;
+  z-index: 4;
+  left: -11px;
+  font-size: 14px
+}
+
+.uaLang {
+  position: relative;
+  z-index: 4;
+  font-size: 14px;
+  left: 7px
+}
+
+.top__nav {
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center
+}
+
+.top__nav-menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative
+}
+
+.top__nav-menu .login {
+  text-decoration: none;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center
+}
+
+.language__wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  position: relative;
+  align-items: center;
+}
+
+.top__nav-menu .login i {
+  margin-right: 5px
+}
+
+.top__nav-menu li {
+  margin-right: 40px
+}
+
+.top__nav-menu li a {
+  color: #234144;
+  font-weight: 200;
+  text-decoration: none
+}
+
+.top__nav-menu li a:hover {
+  color: #ff9c00;
+  text-decoration: none
+}
+
+.top__nav .row {
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center
+}
+
+.top__nav .row .about:hover ul {
+  display: block;
+  position: absolute;
+  text-align: left;
+  top: 65%
+}
+
+.top__nav .row .about:hover ul li {
+  list-style: none;
+  position: relative;
+  padding: 10px 10px;
+  background: #ff9c00
+}
+
+.top__nav .row .about:hover ul li:hover {
+  background: #fff;
+  -webkit-border-radius: 5px;
+  border-radius: 5px
+}
+
+.top__nav .row .about:hover::after {
+  content: "";
+  font-weight: 900;
+  font-family: 'Font Awesome 5 Free';
+  font-size: 14px;
+  color: gray;
+  display: inline-block
+}
+
+.top__nav .row .about::after {
+  content: "";
+  font-weight: 900;
+  font-family: 'Font Awesome 5 Free';
+  font-size: 14px;
+  color: gray;
+  display: inline-block
+}
+
+.top__nav .row .about ul {
+  display: none
+}
+
+.top__nav .row .how:hover ul {
+  display: block;
+  position: absolute;
+  text-align: left;
+  top: 65%
+}
+
+.top__nav .row .how:hover ul li {
+  list-style: none;
+  position: relative;
+  padding: 10px 10px;
+  background: #ff9c00
+}
+
+.top__nav .row .how:hover ul li:hover {
+  background: #fff;
+  -webkit-border-radius: 5px;
+  border-radius: 5px
+}
+
+.top__nav .row .how:hover::after {
+  content: "";
+  font-weight: 900;
+  font-family: 'Font Awesome 5 Free';
+  font-size: 14px;
+  color: gray;
+  display: inline-block
+}
+
+.top__nav .row .how::after {
+  content: "";
+  font-weight: 900;
+  font-family: 'Font Awesome 5 Free';
+  font-size: 14px;
+  color: gray;
+  display: inline-block
+}
+
+.top__nav .row .how ul {
+  display: none
+}
+
+.overlay .about_mobile ul {
+  display: none
+}
+
+.overlay .about_mobile>a::before {
+  content: "";
+  font-weight: 900;
+  font-family: 'Font Awesome 5 Free';
+  font-size: 22px;
+  color: #fff;
+  display: inline-block;
+  position: absolute;
+  right: 30px;
+  top: 0;
+  z-index: 1
+}
+
+.overlay-menu {
+  width: 100%;
+  padding-top: 10px
+}
+
+.overlay-menu ul li a {
+  text-align: left;
+  padding-left: 17px;
+  font-size: 15px;
+  font-weight: 200
+}
+
+.overlay .js-active>a {
+  color: #ff9c00
+}
+
+.overlay .js-active>a::before {
+  content: "";
+  font-weight: 900;
+  font-family: 'Font Awesome 5 Free';
+  font-size: 22px;
+  color: #ff9c00;
+  display: inline-block;
+  position: absolute;
+  right: 30px;
+  top: 0;
+  z-index: 1
+}
+
+.overlay .js-active .about_drop {
+  display: block;
+  font-size: 15px;
+  z-index: 1;
+  padding: 15px 0 40px 15px;
+  margin-top: 10px;
+  background: #34565a;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  line-height: 1;
+  height: 135px
+}
+
+.overlay .js-active .about_drop li a {
+  display: block
+}
+
+.overlay .how_mobile ul {
+  display: none
+}
+
+.overlay .how_mobile>a::before {
+  content: "";
+  font-weight: 900;
+  font-family: 'Font Awesome 5 Free';
+  font-size: 22px;
+  color: #fff;
+  display: inline-block;
+  position: absolute;
+  right: 30px;
+  top: 0;
+  z-index: 1
+}
+
+.overlay .js-active-how>a {
+  color: #ff9c00
+}
+
+.overlay .js-active-how>a::before {
+  content: "";
+  font-weight: 900;
+  font-family: 'Font Awesome 5 Free';
+  font-size: 22px;
+  color: #ff9c00;
+  display: inline-block;
+  position: absolute;
+  right: 30px;
+  top: 0;
+  z-index: 1
+}
+
+.overlay .js-active-how .how_mobile_drop {
+  display: block;
+  font-size: 15px;
+  z-index: 1;
+  padding: 15px 0 10px 15px;
+  margin-top: 10px;
+  background: #34565a;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  line-height: 1.2
+}
+
+.overlay .js-active-how .how_mobile_drop li a {
+  display: block
+}
+
+.logo {
+  position: relative;
+  top: 12px;
+  right: 30px
+}
+
+.login {
+  display: inline-block;
+  padding: 6px 30px;
+  background: #234144;
+  -webkit-border-radius: 20px;
+  border-radius: 20px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  color: #fff;
+  margin-left: 15px;
+  text-decoration: none
+}
+
+.login:hover {
+  text-decoration: none;
+  color: #ff9c00
+}
+
