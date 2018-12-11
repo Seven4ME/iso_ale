@@ -7,6 +7,9 @@ import clock from './img/Clock.png';
 import online from './img/online.png';
 import transparently from './img/transparently.png';
 import secure from './img/secure.png';
+import first from './img/fill_app.png';
+import second from './img/Chat.png';
+import third from './img/recievemoney.png';
 
 class Home extends React.Component {
   render() {
@@ -112,7 +115,7 @@ class Home extends React.Component {
           </div>
         </div>
       </section>
-      <section id="features">
+    <section id="features">
 			<div className={s.features__wrapper}>
 				<div className="container">
 					<div className={s.features__heading}>
@@ -175,6 +178,63 @@ class Home extends React.Component {
 										<p>Все персональные данные клиентов надежно защищенны. Наши клиенты могут быть уверены в качестве защиты
 											персональных данных</p>
 									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+    <section className={s.howitworks}>
+			<div className={s.howitworks__wrapper}>
+				<div className="container">
+					<div className={s.howitworks__heading}>
+						<h2>Как это <span>работает</span></h2>
+					</div>
+					<div className="row">
+						<div className="col-md-12 col-lg-4 col-xl-4">
+							<div className={s.algorithm__wrapper_first}>
+								<div className={s.algorithm__image}>
+									<img src={first} alt=""/>
+								</div>
+								<div className={s.algorithm__step}></div>
+								<div className={s.algorithm__heading}>
+									<h3>Подайте заявку</h3>
+								</div>
+								<div className={s.algorithm__description}>
+									<p>Подайте заявку онлайн — это займет всего несколько минут.</p>
+								</div>
+
+							</div>
+						</div>
+
+
+						<div className="col-md-12 col-lg-4 col-xl-4">
+							<div className={s.algorithm__wrapper_second}>
+								<div className={s.algorithm__image}>
+									<img src={second} alt=""/>
+								</div>
+								<div className={s.algorithm__step}></div>
+								<div className={s.algorithm__heading}>
+									<h3>Дождитесь решения</h3>
+								</div>
+								<div className={s.algorithm__description}>
+									<p>Получите подтверждение. Решение о выдаче кредита будет принято сразу же после заполнения вами заявки.</p>
+								</div>
+
+							</div>
+						</div>
+						<div className="col-md-12 col-lg-4 col-xl-4">
+							<div className={s.algorithm__wrapper_third}>
+								<div className={s.algorithm__image}>
+									<img src={third} alt=""/>
+								</div>
+								<div className={s.algorithm__step}></div>
+								<div className={s.algorithm__heading}>
+									<h3>Получите деньги</h3>
+								</div>
+								<div className={s.algorithm__description}>
+									<p>Средства поступят на вашу карту в течение нескольких минут после обработки заявки.</p>
 								</div>
 							</div>
 						</div>
