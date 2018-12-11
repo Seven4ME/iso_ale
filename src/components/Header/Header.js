@@ -6,6 +6,7 @@
  * This source code is licensed under the MIT license found in the
  * LICENSE.txt file in the root directory of this source tree.
  */
+import rangeStyles from 'react-rangeslider/lib/index.css';
 import grid from 'react-flexgrid/lib/flexgrid.css';
 import React from 'react';
 import withStyles from 'isomorphic-style-loader/lib/withStyles';
@@ -54,4 +55,4 @@ class Header extends React.Component {
   }
 }
 
-export default withStyles(grid, s)(Header);
+export default withStyles(grid, s, rangeStyles)(Header);

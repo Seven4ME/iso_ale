@@ -1,6 +1,8 @@
 import React from 'react';
 import withStyles from 'isomorphic-style-loader/lib/withStyles';
 import s from './Home.css';
+import AmmountSlider from '../../components/Rangeslider/rangesliderAmmount.js';
+import DaysSlider from '../../components/Rangeslider/rangesliderDays.js';
 
 class Home extends React.Component {
   render() {
@@ -31,7 +33,7 @@ class Home extends React.Component {
                                 <span id="money">2150 грн.</span>
                               </div>
                               <div className={s.ammount__container}>
-                                  
+                              <AmmountSlider />
                               </div>
                               </div>
                             <div className={s.term}>
@@ -42,7 +44,7 @@ class Home extends React.Component {
                                 </div>
                                 
                                 <div className={s.days__container}>
-                                
+                              <DaysSlider />
                                 </div>
                               </div>
                             </div>
